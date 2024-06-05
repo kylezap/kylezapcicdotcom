@@ -17,12 +17,17 @@ let theme = createTheme({
     fontFamily: [
       "Inter", 'sans-serif'
     ].join(','),
-    h1: {fontSize: 38,}
+    h1: {fontSize: 96,
+         fontWeight: 500
+    },
+    h2: {fontSize: 24,
+         fontWeight: 400,
+         lineHeight: 1.6
+    },
   },
+    
 });
 
 theme = responsiveFontSizes(theme);
 
 export default theme;
-
-
