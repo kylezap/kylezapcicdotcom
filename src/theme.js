@@ -24,6 +24,10 @@ let theme = createTheme({
          fontWeight: 400,
          lineHeight: 1.6
     },
+    body1: {fontSize: 16,
+            fontWeight: 400,
+            lineHeight: 1.6
+    },
   },
     
 });
