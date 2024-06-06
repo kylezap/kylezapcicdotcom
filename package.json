@@ -11,8 +11,10 @@
     "@emotion/react": "latest",
     "@emotion/styled": "latest",
     "@mui/material": "next",
+    "@mui/icons-material": "next",
     "react": "latest",
-    "react-dom": "latest"
+    "react-dom": "latest",
+    "react-router-dom": "latest"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "latest",
