@@ -1,0 +1,44 @@
+import React from "react";
+import Container from "@mui/material/Container";
+import Typography from "@mui/material/Typography";
+import Box from "@mui/material/Box";
+import Project from "../Components/Project";
+import { Grid } from "@mui/material";
+import Project1 from "../assets/images/Project1.png";
+import Project2 from "../assets/images/Project2.png";
+import Project3 from "../assets/images/Project3.png";
+
+export default function Work() {
+  return (
+    <Container maxWidth="xl">
+      <Box sx={{ my: 4, py: 4 }}>
+        <Typography variant="h2" component="div">
+          {"Projects "}
+        </Typography>
+      </Box>
+      <Grid container spacing={2}>
+        <Project
+          name="Rightsize Meals"
+          image={Project1}
+          link="https://rightsize-meals-1.onrender.com/"
+          description="Nutrition and fitness app where users track their calories"
+          tech="Express, Sessions, PostgreSQL, Sequelize, Handlebars"
+        />
+        <Project
+          name="Ctrl-Alt-Win"
+          image={Project2}
+          link="https://https://ctrl-alt-win.onrender.com/"
+          description="Social media network for gamers."
+          tech="MERN, GraphQL, JSON Web Token"
+        />
+        <Project
+          name="Portfolio"
+          image={Project3}
+          link=""
+          description="My personal portfolio. You're looking at it!"
+          tech="React, Material UI, MUI, React Router"
+        />
+      </Grid>
+    </Container>
+  );
+}

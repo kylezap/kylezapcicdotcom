@@ -5,29 +5,33 @@ import {
   Typography,
   Stack,
   Button,
-  Container,
 } from "@mui/material";
-import OfflineBoltIcon from '@mui/icons-material/OfflineBolt';
-
+import { Link } from "react-router-dom";
+import OfflineBoltIcon from "@mui/icons-material/OfflineBolt";
 
 export default function Navbar() {
   return (
-    <Container maxWidth='xl'>
-      <AppBar position="static" color="inherit" elevation={0}>
-        <Toolbar >
-          <IconButton edge='start' aria-label="logo" color="inherit">
-            <OfflineBoltIcon/>
+    
+      <AppBar position="sticky" color="inherit" elevation={0} sx={{ backgroundColor: 'rgba(255, 255, 255, 0.9)' }}>
+        <Toolbar>
+          <IconButton edge="start" aria-label="logo" color="inherit" component={Link} to='/'> 
+            <OfflineBoltIcon />
           </IconButton>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+          <Typography variant="h6" underline="none" component={Link} to='/' color="inherit" sx={{ flexGrow: 1, textDecoration: 'none' }}>
             Kyle Zapcic
           </Typography>
           <Stack direction="row" spacing={2}>
-            <Button color="inherit">About</Button>
-            <Button color="inherit">Work</Button>
-            <Button color="inherit" href='mailto:kzapcic@gmail.com'>Contact</Button>
+            <Button component={Link} to="about" color="inherit" underline="hover" >
+              About
+            </Button>
+            <Button component={Link} to="work" color="inherit" underline="hover">
+              Work
+            </Button>{" "}
+            <Button color="inherit" href="mailto:kzapcic@gmail.com" underline="hover">
+              Contact
+            </Button>
           </Stack>
         </Toolbar>
       </AppBar>
-    </Container>
   );
 }

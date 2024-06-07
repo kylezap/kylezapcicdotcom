@@ -17,14 +17,14 @@ let theme = createTheme({
     fontFamily: [
       "Inter", 'sans-serif'
     ].join(','),
-    h1: {fontSize: 96,
+    h1: {fontSize: 86,
          fontWeight: 500
     },
-    h2: {fontSize: 24,
+    h2: {fontSize: 32,
          fontWeight: 400,
          lineHeight: 1.6
     },
-    body1: {fontSize: 16,
+    body1: {fontSize: 20,
             fontWeight: 400,
             lineHeight: 1.6
     },
