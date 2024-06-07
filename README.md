@@ -1,39 +1,37 @@
-# Material UI - Vite.js example
+# Portfolio
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
-## How to use
+# Table of Contents
+1. [Description](#Description)
+2. [Installation](#installation)
+3. [Usage](#tusage)
+4. [License](#license)
+5. [Contributors](#contributors)
+6. [Testing](#testing)
+7. [Questions](#questions)
 
-Download the example [or clone the repo](https://github.com/mui/material-ui):
+## Description
+This is my personal portfolio website.
 
-<!-- #default-branch-switch -->
+[Portfolio](https://kylezapcicportfolio.netlify.app/)
 
-```bash
-curl https://codeload.github.com/mui/material-ui/tar.gz/next | tar -xz --strip=2 material-ui-next/examples/material-ui-vite
-cd material-ui-vite
-```
+![screenshot](/public/screenshot.png)
 
-Install it and run:
+## Installation
+This project is a Vite deployment with React, React Router, and Material UI component library. 
 
-```bash
-npm install
-npm run dev
-```
+## Usage
+This is a basic portfolio built in React. 
 
-or:
+## License
+This is a Apache License 2.0
 
-<!-- #default-branch-switch -->
+## Contributors
+@kylezap
 
-[![Edit on StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/mui/material-ui/tree/next/examples/material-ui-vite)
+## Testing
+NA
 
-[![Edit on CodeSandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/p/sandbox/github/mui/material-ui/tree/next/examples/material-ui-vite)
+## Questions?
+If you have any questions, feel free to send me an email at [kzapcic@gmail.com](mailto:kzapcic@gmail.com)
 
-## The idea behind the example
-
-This example uses [Vite.js](https://github.com/vitejs/vite).
-It includes `@mui/material` and its peer dependencies, including [Emotion](https://emotion.sh/docs/introduction), the default style engine in Material UI v5.
-
-## What's next?
-
-<!-- #default-branch-switch -->
-
-You now have a working example project.
-You can head back to the documentation and continue by browsing the [templates](https://next.mui.com/material-ui/getting-started/templates/) section.
