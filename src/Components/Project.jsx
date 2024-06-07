@@ -156,7 +156,7 @@ export default function Project({ name, image, link, description, tech }) {
     alignItems: 'center',
       }}>
         <br />
-        <div>Tech: {tech}</div>
+        <div>Tech 🧑‍💻: {tech}</div>
       </Box>
     </Box>
   );
