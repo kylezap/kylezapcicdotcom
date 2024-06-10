@@ -27,8 +27,8 @@ export default function Work() {
         <Project
           name="Ctrl-Alt-Win"
           image={Project2}
-          link="https://https://ctrl-alt-win.onrender.com/"
-          description="Social media network for gamers."
+          link="https://ctrl-alt-win.onrender.com/"
+          description="Social media network for gamers. Users can create profiles, post, and comment, search a database of games through an API, and save games to their profiles."
           tech="MERN, GraphQL, JSON Web Token"
         />
         <Project
