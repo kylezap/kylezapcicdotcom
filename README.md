@@ -33,5 +33,5 @@ This is a Apache License 2.0
 NA
 
 ## Questions?
-If you have any questions, feel free to send me an email at [kzapcic@gmail.com](mailto:kzapcic@gmail.com)
+If you have any questions, feel free to send me an email kzapcic at gmail dot com.
 

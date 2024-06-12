@@ -8,17 +8,16 @@ import Footer from "../Components/Footer";
 export default function NotFound() {
   return (
     <>
-    <Navbar />
-    <Container maxWidth="xl">
-      <Box sx={{ my: 4, py: 4 }}>
-        <img src="src/assets/images/gandalf.webp" alt="" />
-        <Typography variant="h2" component="div" alignContent='center'>          
-          404 Not Found
-        </Typography>
-      </Box>
-    </Container>
-    <Footer />
+      <Navbar />
+      <Container maxWidth="xl">
+        <Box sx={{ my: 4, py: 4 }}>
+          <img src="src/assets/images/gandalf.webp" alt="" />
+          <Typography variant="h2" component="div" alignContent="center">
+            404 Not Found
+          </Typography>
+        </Box>
+      </Container>
+      <Footer />
     </>
-    
   );
 }
