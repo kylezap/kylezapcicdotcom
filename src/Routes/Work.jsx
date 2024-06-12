@@ -7,6 +7,8 @@ import { Grid } from "@mui/material";
 import Project1 from "../assets/images/Project1.png";
 import Project2 from "../assets/images/Project2.png";
 import Project3 from "../assets/images/Project3.png";
+import Divider from '@mui/material/Divider';
+
 
 export default function Work() {
   return (
@@ -14,6 +16,9 @@ export default function Work() {
       <Box sx={{ my: 4, py: 4 }}>
         <Typography variant="h2" component="div">
           {"Projects "}
+        </Typography>
+        <Typography variant="body" component="div">
+          {"Here are some of the projects I've worked on. Click on the images to view the live sites."}
         </Typography>
       </Box>
       <Grid container spacing={2}>
@@ -24,6 +29,7 @@ export default function Work() {
           description="Nutrition and fitness app where users track their calories"
           tech="Express, Sessions, PostgreSQL, Sequelize, Handlebars"
         />
+        <Divider variant="middle" component='div'/>
         <Project
           name="Ctrl-Alt-Win"
           image={Project2}
@@ -34,7 +40,7 @@ export default function Work() {
         <Project
           name="Portfolio"
           image={Project3}
-          link=""
+          link="/"
           description="My personal portfolio. You're looking at it!"
           tech="React, Material UI, MUI, React Router"
         />

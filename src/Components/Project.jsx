@@ -8,6 +8,8 @@ export default function Project({ name, image, link, description, tech }) {
     <Box
       component={Link}
       to={link}
+      target="_blank" 
+      rel="noopener noreferrer"
       elevation={4}
       sx={{
         position: "relative",

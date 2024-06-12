@@ -20,13 +20,13 @@ export default function Hero() {
           <Box sx={{ my: 4, py: 4 }}>
             <Slide direction="right" in={checked} timeout={500}>
               <Typography variant="h1" component="h1" sx={{ mb: 2 }}>
-                Fullstack Software Engineer, UX Enthusiast, and Problem Solver.
+                Fullstack Software Developer, UX Enthusiast, and Problem Solver.
               </Typography>
             </Slide>
             <Slide direction="up" in={checked} timeout={700}>
               <Typography variant="h2" sx={{ mt: 4, color: "text.secondary" }}>
                 {
-                  "Hi, I'm Kyle Zapcic, a fullstack software engineer bridging the gap between development and user experience. I'm passionate about building modern, responsive, and impactful web apps."
+                  "Hi, I'm Kyle Zapcic, a fullstack software developer bridging the gap between development and user experience. I'm passionate about building modern, responsive, and impactful web apps."
                 }
               </Typography>
             </Slide>
