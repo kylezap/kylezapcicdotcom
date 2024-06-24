@@ -1,6 +1,4 @@
 import * as React from "react";
-import Navbar from "./Components/Navbar";
-import Footer from "./Components/Footer";
 import { Outlet } from "react-router-dom";
 import "./App.css";
 import theme from './theme'
@@ -14,9 +12,9 @@ export default function App() {
       <React.StrictMode>
         <ThemeProvider theme={theme}>
           <CssBaseline />
-            <Navbar />
+            
               <Outlet />
-            <Footer />
+              
         </ThemeProvider>
       </React.StrictMode>
     </>

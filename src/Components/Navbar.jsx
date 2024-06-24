@@ -6,17 +6,44 @@ import {
   Stack,
   Button,
 } from "@mui/material";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import OfflineBoltIcon from "@mui/icons-material/OfflineBolt";
+import { keyframes } from "@mui/system";
+
+
 
 export default function Navbar() {
+  const location = useLocation();
+
+  const getNavStyle = (path) => {
+    switch (path) {
+      case "/":
+        return "navbar home";
+      case "/about":
+        return "navbar about";
+      case "/work":
+        return "navbar work";
+      case "/contact":
+        return "navbar contact";
+      default:
+        return {};
+    }
+  };
+
+  const currentStyle = getNavStyle(location.pathname);
+  console.log(currentStyle);
+
+  const spin = keyframes`
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  `;
+
   return (
-    <AppBar
-      position="sticky"
-      color="inherit"
-      elevation={0}
-      sx={{ backgroundColor: "rgba(255, 255, 255, 0.9)" }}
-    >
+    <AppBar position="sticky" color="inherit" elevation={0}>
       <Toolbar>
         <IconButton
           edge="start"
@@ -24,6 +51,7 @@ export default function Navbar() {
           color="inherit"
           component={Link}
           to="/"
+          sx={{ animation: `${spin} 10s linear infinite` }}
         >
           <OfflineBoltIcon />
         </IconButton>
@@ -37,16 +65,32 @@ export default function Navbar() {
         >
           Kyle Zapcic
         </Typography>
-        <Stack direction="row" spacing={2}>
-          <Button component={Link} to="about" color="inherit" underline="hover">
+        <Stack direction="row" spacing={2} >
+          <Button
+            component={Link}
+            to="/about"
+            color="inherit"
+            className={currentStyle}
+            // sx={{ color: "white" }}
+            underline="hover"
+          >
             About
           </Button>
-          <Button component={Link} to="work" color="inherit" underline="hover">
+          <Button
+            component={Link}
+            to="/work"
+            color="inherit"
+            className={currentStyle}
+            // sx={{ color: "white" }}
+            underline="hover"
+          >
             Work
           </Button>{" "}
           <Button
             color="inherit"
+            className={currentStyle}
             href="mailto:kzapcic@gmail.com"
+            // sx={{ color: "white" }}
             underline="hover"
           >
             Contact

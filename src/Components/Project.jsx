@@ -11,6 +11,7 @@ export default function Project({ name, image, link, description, tech }) {
       target="_blank" 
       rel="noopener noreferrer"
       elevation={4}
+      gap={4}
       sx={{
         position: "relative",
         p: 2,
