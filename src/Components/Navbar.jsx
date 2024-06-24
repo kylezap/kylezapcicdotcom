@@ -8,6 +8,8 @@ import {
 } from "@mui/material";
 import { Link, useLocation } from "react-router-dom";
 import OfflineBoltIcon from "@mui/icons-material/OfflineBolt";
+import { keyframes } from "@mui/system";
+
 
 
 export default function Navbar() {
@@ -31,6 +33,15 @@ export default function Navbar() {
   const currentStyle = getNavStyle(location.pathname);
   console.log(currentStyle);
 
+  const spin = keyframes`
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  `;
+
   return (
     <AppBar position="sticky" color="inherit" elevation={0}>
       <Toolbar>
@@ -40,6 +51,7 @@ export default function Navbar() {
           color="inherit"
           component={Link}
           to="/"
+          sx={{ animation: `${spin} 10s linear infinite` }}
         >
           <OfflineBoltIcon />
         </IconButton>

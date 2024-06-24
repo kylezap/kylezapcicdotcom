@@ -5,6 +5,8 @@ import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Slide from "@mui/material/Slide";
 import surf from "../assets/images/surfing.jpg";
+import {Link} from 'react-router-dom';
+import Work from "../Routes/Work";
 
 export default function Hero() {
   const [checked, setChecked] = useState(false);
@@ -14,7 +16,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <Container maxWidth="xl">
+    <Container maxWidth="xl" className="hero-container">
       <Grid container spacing={2} alignItems="center">
         <Grid item xs={8}>
           <Box sx={{ my: 4, py: 4 }}>
@@ -24,21 +26,21 @@ export default function Hero() {
               </Typography>
             </Slide>
             <Slide direction="up" in={checked} timeout={700}>
-              <Typography variant="h2" sx={{ mt: 4, color: "text.secondary" }}>
-                {
-                  "Hi, I'm Kyle Zapcic, a fullstack software developer bridging the gap between development and user experience. I'm passionate about building modern, responsive, and impactful web apps."
-                }
+              <Typography variant="h2" sx={{ mt: 4, mr: 4, color: "text.secondary" }}>
+                
+                  Hi, I'm Kyle, a fullstack software developer bridging the gap between development and user experience. I'm passionate about building modern, responsive, and impactful web apps. Get in touch here, view my <a href='/work'>work</a>, learn about <a href="/about">me</a>, or check out my <a href="https://github.com/kylezap">github</a> . Thanks for stopping by!
+                
               </Typography>
+              
             </Slide>
           </Box>
         </Grid>
-        <Grid item xs={4}>
+        <Grid item xs={4} style={{ position: "relative" }}>
           <Slide direction="left" in={checked} timeout={900}>
             <img
               src={surf}
               alt="surfing"
-              className="hero"
-              style={{ width: "100%" }}
+              className="hero-img"
             />
           </Slide>
         </Grid>

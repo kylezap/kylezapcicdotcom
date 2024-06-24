@@ -5,9 +5,13 @@ import Grid from "@mui/material/Grid";
 
 import catalina from "../assets/images/catalina-square.jpeg";
 import { Link } from "react-router-dom";
+import Navbar from "../Components/Navbar";
+import Footer from "../Components/Footer";
 
 export default function About() {
   return (
+    <>
+    <Navbar />
     <Container maxWidth="xl">
       <Box sx={{ my: 4, py: 4 }} alignItems="center">
         <Typography variant="h2" component="div">
@@ -24,17 +28,20 @@ export default function About() {
             <br />
           </Grid>
           <Grid item xs={12} sm={6}>
-            <img src={catalina} alt="catalina" className="about" />
+            <img src={catalina} alt="catalina" className="about-img" />
           </Grid>
         </Grid>
         
           <Typography variant="body1" component="div" sx={{ my: 4}}>
             {
-              "React, Node.js, Express, and MongoDB are just a few of the tools in my developer toolkit. I am also well-versed utilizing things other tools like GraphQL, REST API's, and Postgres, and I am always eager to learn new technologies and frameworks. My passion for creating modern, responsive, and impactful web applications is matched only by my dedication to building user-friendly interfaces that enhance the user experience. I am excited to continue growing as a developer and to leverage my skills to create innovative solutions that make a difference in the world. When I am not coding, you can find me surfing, hiking, or exploring the great outdoors. I am also an avid reader, a music lover, and a lifelong learner who is always seeking new adventures and experiences. I am excited to connect with like-minded individuals and collaborate on exciting projects that push the boundaries of what is possible in the tech world. Let's build something amazing together!"
+              "React, Node.js, Express, and MongoDB are just a few of the tools in my developer toolkit. I am also well-versed using tools like GraphQL, REST API's, and Postgres, and I am always eager to learn new technologies and frameworks. My passion for creating modern, responsive, and impactful web applications is matched only by my dedication to building user-friendly interfaces that enhance the user experience. I am excited to continue growing as a developer and to leverage my skills to create innovative solutions that make a difference in the world. When I am not coding, you can find me hanging out with my wife, son and dog, surfing, cooking, golfing or exploring the great outdoors. I am also an avid reader, a music lover, and a lifelong learner who is always seeking new adventures and experiences. I am excited to connect with like-minded individuals and collaborate on exciting projects that push the boundaries of what is possible in the tech world. Let's build something amazing together!"
             }
           </Typography>
         
       </Box>
     </Container>
+    <Footer/>
+    </>
+    
   );
 }

@@ -5,15 +5,7 @@ import EmailIcon from "@mui/icons-material/Email";
 
 export default function Footer() {
   return (
-    <Container maxWidth="xl">
-      <Box
-        sx={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "space-between",
-          mb: 4,
-        }}
-      >
+    <Box maxWidth="xl" className="footer-container">
         <Typography variant="h2">
           Get in touch:{" "}
           <Link href="mailto:kzapcic@gmail.com" color="inherit">
@@ -37,7 +29,7 @@ export default function Footer() {
             <GitHubIcon />
           </IconButton>
         </Box>
-      </Box>
-    </Container>
+      
+    </Box>
   );
 }
