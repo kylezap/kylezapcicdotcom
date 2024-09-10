@@ -11,7 +11,6 @@ import Footer from "../Components/Footer";
 export default function About() {
   return (
     <>
-    <Navbar />
     <Container maxWidth="xl">
       <Box sx={{ my: 4, py: 4 }} alignItems="center">
         <Typography variant="h2" component="div">
@@ -40,7 +39,6 @@ export default function About() {
         
       </Box>
     </Container>
-    <Footer/>
     </>
     
   );

@@ -8,15 +8,13 @@ import Project1 from "../assets/images/Project1.png";
 import Project2 from "../assets/images/Project2.png";
 import Project3 from "../assets/images/Project3.png";
 import Divider from '@mui/material/Divider';
-import Navbar from "../Components/Navbar";
-import Footer from "../Components/Footer";
+
 
 
 
 export default function Work() {
   return (
     <>
-    <Navbar />
     <Container maxWidth="xl">
       <Box sx={{ my: 4, py: 4 }}>
         <Typography variant="h2" component="div">
@@ -51,7 +49,6 @@ export default function Work() {
         />
       </Grid>
     </Container>
-    <Footer />
     </>
     
   );

@@ -19,6 +19,7 @@ html, body {
 .home-container {
     
     overflow: hidden;
+    
 }
 
 
@@ -33,15 +34,10 @@ html, body {
 }
 
 .hero-img {
-  width: auto;
-  /* height: 700px; */
+  width: 100%;
+  height: 100vh;
   object-fit: cover;
   object-position: center;
-  height: 100vh;
-  position: "absolute";
-  right: 0;
-  z-index: -1;
-  margin-top: -80px;
   
 }
 

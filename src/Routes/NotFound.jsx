@@ -8,7 +8,6 @@ import Footer from "../Components/Footer";
 export default function NotFound() {
   return (
     <>
-      <Navbar />
       <Container maxWidth="xl">
         <Box sx={{ my: 4, py: 4 }}>
           <img src="src/assets/images/gandalf.webp" alt="" />
@@ -17,7 +16,6 @@ export default function NotFound() {
           </Typography>
         </Box>
       </Container>
-      <Footer />
     </>
   );
 }
