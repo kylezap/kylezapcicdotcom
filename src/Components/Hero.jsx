@@ -5,8 +5,7 @@ import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Slide from "@mui/material/Slide";
 import surf from "../assets/images/surfing.jpg";
-import {Link} from 'react-router-dom';
-import Work from "../Routes/Work";
+import profile from "../assets/images/profile.jpg";
 
 export default function Hero() {
   const [checked, setChecked] = useState(false);
@@ -38,7 +37,7 @@ export default function Hero() {
         <Grid item xs={4} style={{ position: "relative" }}>
           <Slide direction="left" in={checked} timeout={900}>
             <img
-              src={surf}
+              src={profile}
               alt="surfing"
               className="hero-img"
             />
