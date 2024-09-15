@@ -17,20 +17,21 @@ export default function Hero() {
   return (
     <Container maxWidth="xl" className="hero-container">
       <Grid container spacing={2} alignItems="center">
-        <Grid item xs={8}>
+        <Grid item xs={8}
+        
+        >
           <Box sx={{ my: 4, py: 4 }}>
             <Slide direction="right" in={checked} timeout={500}>
               <Typography variant="h1" component="h1" sx={{ mb: 2 }}>
-                Fullstack Software Developer, UX Enthusiast, and Problem Solver.
+                 Software Developer,<br /> UX Enthusiast, <br /> Problem Solver.
               </Typography>
             </Slide>
             <Slide direction="up" in={checked} timeout={700}>
               <Typography variant="h2" sx={{ mt: 4, mr: 4, color: "text.secondary" }}>
                 
-                  Hi, I'm Kyle, a fullstack software developer bridging the gap between development and user experience. I'm passionate about building modern, responsive, and impactful web apps. Get in touch here, view my <a href='/work'>work</a>, learn about <a href="/about">me</a>, or check out my <a href="https://github.com/kylezap">github</a> . Thanks for stopping by!
+                  Hi, I'm Kyle, a fullstack software developer bridging the gap between development and user experience. Bringing deep experience in client facing work, I'm passionate about building modern, responsive, and impactful web apps. Get in touch here, view my <a href='/work'>work</a>, learn about <a href="/about">me</a>, or check out my <a href="https://github.com/kylezap">github</a> . Thanks for stopping by!
                 
               </Typography>
-              
             </Slide>
           </Box>
         </Grid>

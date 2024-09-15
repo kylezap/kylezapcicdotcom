@@ -18,8 +18,9 @@ export default function Work() {
     <Container maxWidth="xl">
       <Box sx={{ my: 4, py: 4 }}>
         <Typography variant="h2" component="div">
-          {"Projects "}
+          Projects
         </Typography>
+        <br />
         <Typography variant="body" component="div">
           {"Here are some of the projects I've worked on. Click on the images to view the live sites."}
         </Typography>
